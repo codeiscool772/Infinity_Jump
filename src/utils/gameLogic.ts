@@ -91,7 +91,7 @@ const updatePlayer = (state: GameState, input: { left: boolean; right: boolean; 
     player.facingDirection = 'right';
   } else {
     // Apply friction
-    player.velocity.x *= 0.6;
+    player.velocity.x *= 0.3;
     if (Math.abs(player.velocity.x) < 0.1) player.velocity.x = 0;
   }
   
